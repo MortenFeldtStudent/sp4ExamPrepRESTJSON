@@ -3,8 +3,35 @@
     <head>
         <title>Start Page</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Generated List of persons</h1>
+        <br>  <br>  <br>
+        <div class="container">
+            <table class="table table-striped" id="content">
+            </table>
+        </div>
+        <div class="container">
+            <div class="form-group">
+                <label>Id:</label>
+                <input type="number" class="form-control" id="firstid">
+            </div>
+            <div class="form-group">
+                <label>Amount of Persons to be printed:</label>
+                <input type="number" class="form-control" id="amount">
+            </div>
+            <button type="button" class="btn btn-primary" id="btn">Show List</button>
+        </div> 
+        <script src="personList.js"></script>
     </body>
 </html>

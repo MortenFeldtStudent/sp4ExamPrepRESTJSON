@@ -9,7 +9,7 @@ public class Generator {
 
     private final Random random = new Random();
     private final String[] arrFirstName = {"Ib", "Mogens", "Lars", "Morten", "Kurt", "Hans", "Peter", "Jørgen", "Thomas", "Per"};
-    private final String[] arrLastName = {"Hansen", "Jensen", "Nielsen", "Pertersen", "Pedersen", "Johansen", "Jørgensen"};
+    private final String[] arrLastName = {"Hansen", "Jensen", "Nielsen", "Petersen", "Pedersen", "Johansen", "Jørgensen"};
     
     private final List<Person> listPersons = new ArrayList();
 
@@ -29,50 +29,6 @@ public class Generator {
         }
         
         return listPersons;
-
-//        StringBuilder finalSample = new StringBuilder();
-//        int id = firstIdSample;
-//
-//        for (int i = 1; i <= countSample; i++) {
-//
-//            StringBuilder str = new StringBuilder();
-//            str.append("{");
-//
-//            str.append("fname:");
-//            str.append(" ");
-//            str.append(findRandomName(arrFirstName));
-//            str.append(",");
-//            str.append(" ");
-//
-//            str.append("lname:");
-//            str.append(" ");
-//            str.append(findRandomName(arrLastName));
-//            str.append(",");
-//            str.append(" ");
-//
-//            str.append("id:");
-//            str.append(" ");
-//            str.append(String.valueOf(id));
-//            str.append(",");
-//            str.append(" ");
-//
-//            str.append("age:");
-//            str.append(" ");
-//            int age = countAge(17, 70);
-//            str.append(String.valueOf(age));
-//            str.append("}");
-//
-//            if (i != countSample) {
-//                str.append(",");
-//            }
-//
-//            finalSample.append(str.toString());
-//
-//            id += 1;
-//
-//        }
-//
-//        return finalSample.toString();
 
     }
 
